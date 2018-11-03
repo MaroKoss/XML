@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+	<!-- Ta lista będzie opisywała kilka samochodów. 
+	Będą to samochody różnych marek o różnych typach nadwozia itd.
+	-->
+<all>
+	<person>
+		<name>Marek</name>
+		<surname>Żaczek</surname>
+		<sex>male</sex>
+		<age>20</age>
+		<town>Krakow</town>
+		<nation>Polish</nation>
+		<field>Informatyka Stosowana</field>
+		<number>WZISN1</number>
+		<group>1114</group>
+	</person>
+	<samochody>
+		<car>
+			<mark>BMW</mark>
+			<model>330i</model>
+			<engine data="capacity">2979cm3</engine>
+			<engine data="fuel">petrol</engine>
+			<engine data="injection">indirect</engine>
+			<year>2000</year>
+			<body>Sedan</body>
+			<color>Blue</color>
+			<mileage>242040</mileage>
+		</car>
+		<car>
+			<mark>BMW</mark>
+			<model>330d</model>
+			<engine data="capacity">2926cm3</engine>
+			<engine data="fuel">diesel</engine>
+			<engine data="injection">direct</engine>
+			<year>2003</year> 
+			<body>Kombi</body>
+			<color>Silver</color>
+			<mileage>546640</mileage>
+		</car>
+		<car>
+			<mark>Audi</mark>
+			<model>A6</model>
+			<engine data="capacity">1996cm3</engine>
+			<engine data="fuel">diesle</engine>
+			<engine data="injection">direct</engine>
+			<year>2010</year>
+			<body>Kombi</body>
+			<color>Black</color>
+			<mileage>284068</mileage>
+		</car>
+		<car>
+			<mark>VW</mark>
+			<model>POLO</model>
+			<engine data="capacity">1964cm3</engine>
+			<engine data="fuel">diesel</engine>
+			<engine data="injection">indirect</engine>
+			<year>1998</year>
+			<body>Hatchback</body>
+			<color>White</color>
+			<mileage>199453</mileage>
+		</car>
+		<car>
+			<mark>Audi</mark>
+			<model>A6</model>
+			<engine data="capacity">2456cm3</engine>
+			<engine data="fuel">Diesel</engine>
+			<engine data="injection">indirect</engine>
+			<year>1997</year>
+			<body>Kombi</body>
+			<color>Gray</color>
+			<mileage>355004</mileage>
+		</car>
+		<car>
+			<mark>Opel</mark>
+			<model>Meriva</model>
+			<engine data="capacity">1294</engine>
+			<engine data="fuel">Diesle</engine>
+			<engine data="injection">direct</engine>
+			<year>2005</year>
+			<body>VAN</body>
+			<color>LightBlue</color>
+			<mileage>154225</mileage>
+		</car>
+		<car>
+			<mark>VW</mark>
+			<model>Sharan</model>
+			<engine data="capacity">1991cm3</engine>
+			<engine data="fuel">Diesle</engine>
+			<engine data="injection">indirect</engine>
+			<year>2006</year>
+			<body>VAN</body>
+			<color>DakrGreen</color>
+			<mileage>365440</mileage>
+		</car>
+		<car>
+			<mark>Toyota</mark>
+			<model>Yaris</model>
+			<engine data="capacity">998cm3</engine>
+			<engine data="fuel">petrol</engine>
+			<engine data="injection">indirect</engine>
+			<year>2009</year>
+			<body>micro</body>
+			<color>Silver</color>
+			<mileage>99512</mileage>
+		</car>
+		<car>
+			<mark>Suzuki</mark>
+			<model>Swift</model>
+			<engine data="capacity">1299cm3</engine>
+			<engine data="fuel">petrol</engine>
+			<engine data="injection">indirect</engine>
+			<year>2009</year>
+			<body>Micro</body>
+			<color>SnowWhite</color>
+			<mileage>54876</mileage>
+		</car>
+		<car>
+			<mark>Audi</mark>
+			<model>A3</model>
+			<engine data="capacity">1994</engine>
+			<engine data="fuel">Diesel</engine>
+			<engine data="injection">direct</engine>
+			<year>2013</year>
+			<body>SportBack</body>
+			<color>DytonaGray</color>
+			<mileage>105004</mileage>
+		</car>
+		<car>
+			<mark>BMW</mark>
+			<model>530d</model>
+			<engine data="capacity">2975cm3</engine>
+			<engine data="fuel">Diesel</engine>
+			<engine data="injection">direct</engine>
+			<year>2005</year>
+			<body>Coupe</body>
+			<color>Black</color>
+			<mileage>302404</mileage>
+		</car>
+		<car>
+			<mark>Seat</mark>
+			<model>Leon Cupra</model>
+			<engine data="capacity">2210cm3</engine>
+			<engine data="fuel">petrol</engine>
+			<engine data="injection">direct</engine>
+			<year>2014</year>
+			<body>SportBack</body>
+			<color>White</color>
+			<mileage>32510</mileage>
+		</car>
+	</samochody>
+	<copyright>
+		<wydzial>Wydział Zarządzania</wydzial>
+		<uczelnia>Uniwersytet Ekonomiczny</uczelnia>
+		<miasto>Kraków</miasto>
+	</copyright>
+</all>
