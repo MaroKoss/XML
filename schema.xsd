@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<!--
+		ssdfgsdfg
+		fghdhgdfhgd
+	-->
+	<xsd:element name="all">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="person" type="personity" maxOccurs="1" />
+				<xsd:element name="samochody" type="cars" />
+				<xsd:element name="copyright" type="copy" maxOccurs="1" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:complexType name="personity">
+		<xsd:sequence>
+			<xsd:element name="name" type="xsd:string" minOccurs="0" maxOccurs="2"/>
+			<xsd:element name="surname" type="xsd:string"/>
+			<xsd:element name="sex" type="TypeSex"/>
+			<xsd:element name="age" type="TypeAge"/>
+			<xsd:element name="town" type="xsd:string"/>
+			<xsd:element name="nation" type="xsd:string"/>
+			<xsd:element name="field" type="xsd:string"/>
+			<xsd:element name="number" type="xsd:string"/>
+			<xsd:element name="group" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:simpleType name="TypeSex">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="female"/>
+			<xsd:enumeration value="male"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+    <xsd:simpleType name="TypeAge">
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="10"/>
+            <xsd:maxInclusive value="100"/>
+        </xsd:restriction>
+    </xsd:simpleType>	
+	
+	<xsd:complexType name="cars">
+		<xsd:sequence>
+			<xsd:element name="car" type="CarsInfo" minOccurs="10" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="CarsInfo">
+		<xsd.sequence>
+			<xsd:element name="mark" type="xsd:string"/>
+			<xsd:element name="model" type="xsd:string"/>
+			<xsd:element name="engine" type="xsd:string" minOccurs="0" maxOccurs="3"/>
+			<xsd:element name="year" type="TypeYear"/>
+			<xsd:element name="body" type="TypeBody"/>
+			<xsd:element name="color" type="xsd:string"/>
+			<xsd:element name="mileage" type="xsd:integer"/>
+		</xsd.sequence>
+	</xsd:complexType>
+	
+	<xsd:simpleType name="TypeBody">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Hatchback"/>
+			<xsd:enumeration value="Kombi"/>
+			<xsd:enumeration value="Sedan"/>
+			<xsd:enumeration value="VAN"/>
+			<xsd:enumeration value="micro"/>
+			<xsd:enumeration value="SportBack"/>
+			<xsd:enumeration value="Coupe"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+
+	<xsd:simpleType name="TypeYear">
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="1900"/>
+            <xsd:maxInclusive value="2019"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+	
+	<xsd:complexType name="copy">
+		<xsd:sequence>
+			<xsd:element name="wydzial" type="xsd:string"/>
+			<xsd:element name="uczelnia" type="xsd:string"/>
+			<xsd:element name="miasto" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+</xsd:schema>
